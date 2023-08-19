@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="styles.css" class="rel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <h1>Student Management System</h1>
+    <form id="studentForm">
+        <input type="text" id="name" name="name" required placeholder="Name">
+        <input type="number" id="age" name="age" required placeholder="Age" min="0">
+        <input type="text" id="grade" name="grade" required placeholder="Grade">
+        <input type="text" id="degree" name="degree" required placeholder="Degree">
+        <input type="email" id="email" name="email" required placeholder="Email"><br>
+        <input type="submit" value="Add Student">
+    </form>
+    <input type="text" id="search" name="search" placeholder="Search By Name, Email or Degree"><br><br>
+
+    <table id="studentsTable">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Degree</th>
+            <th>Email</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+</body>
+
+</html>
